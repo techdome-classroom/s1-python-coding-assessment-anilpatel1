@@ -1,8 +1,6 @@
 class Solution:
-   
-    def getTotalIsles(self, grid: list[list[str]]) -> int:
-    #    write your code here
-                    if not map:
+    def getTotalIsles(self, map):
+        if not map:
             return 0
 
         rows = len(map)
