@@ -2,7 +2,7 @@ class Solution:
     def getTotalIsles(self, map):
         if not map:
             return 0
-
+        
         rows = len(map)
         cols = len(map[0])
         visited = [[False] * cols for _ in range(rows)]
@@ -17,7 +17,7 @@ class Solution:
             dfs(r, c - 1)
 
         island_count = 0
-
+        
         for i in range(rows):
             for j in range(cols):
                 if map[i][j] == 'L' and not visited[i][j]:
